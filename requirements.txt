@@ -1,0 +1,9 @@
+lxml
+paramiko
+sqlalchemy
+bitarray
+grpcio
+grpcio-tools
+neutron==12.0.4
+neutron-lib==1.13.0
+nova

@@ -1,0 +1,6 @@
+idna==2.7
+nose
+mock
+oslotest
+pymysql
+testing.mysqld
