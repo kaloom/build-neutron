@@ -12,15 +12,16 @@ RUN yum -y install \
     rpm-build \
     python-devel \
     which \
-    mariadb-server\
+    mariadb-server \
  && yum -y groupinstall 'Development Tools'\
- && yum clean all \
- && curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py \
+ && curl https://bootstrap.pypa.io/2.7/get-pip.py -o get-pip.py \
  && python get-pip.py \
  && pip install setuptools \
  && pip install -r requirements.txt \
  && pip install -r test-requirements.txt \
  && rm -rf /tmp/*requirements.txt \
+ && yum clean all \
+ && rm -rf /var/cache/yum \
  && mkdir -p /opt/neutron /opt/kaloom
 
 COPY entrypoint.sh /opt/kaloom/
