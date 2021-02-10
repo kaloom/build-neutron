@@ -1,1 +1,1 @@
-This project hosts neutron ML2 plugin build container
+This project hosts neutron ML2 plugin build container for Train
