@@ -1,6 +1,6 @@
 FROM centos:7.6.1810
 
-COPY test-requirements.txt requirements.txt /tmp/
+COPY get-pip.py test-requirements.txt requirements.txt /tmp/
 WORKDIR /tmp
 
 #-----------------------
@@ -14,7 +14,6 @@ RUN yum -y install \
     which \
     mariadb-server \
  && yum -y groupinstall 'Development Tools'\
- && curl https://bootstrap.pypa.io/2.7/get-pip.py -o get-pip.py \
  && python get-pip.py \
  && pip install setuptools \
  && pip install -r requirements.txt \

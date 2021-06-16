@@ -6,3 +6,4 @@ grpcio-tools
 neutron==15.0.0
 neutron-lib==1.29.1
 nova
+pyroute2==0.5.17
