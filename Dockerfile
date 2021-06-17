@@ -7,18 +7,15 @@ WORKDIR /tmp
 # install basic packages
 #-----------------------
 RUN yum -y install \
-    git \
     fakeroot \ 
     rpm-build \
-    python-devel \
-    which \
-    mariadb-server \
+    python3-devel \
+    python3-setuptools \
+    libcurl-devel \
+    libattr-devel \
  && yum -y groupinstall 'Development Tools'\
- && curl https://bootstrap.pypa.io/2.7/get-pip.py -o get-pip.py \
- && python get-pip.py \
- && pip install setuptools \
- && pip install -r requirements.txt \
- && pip install -r test-requirements.txt \
+ && pip3 install -r requirements.txt \
+ && pip3 install -r test-requirements.txt \
  && rm -rf /tmp/*requirements.txt \
  && yum clean all \
  && rm -rf /var/cache/yum \
