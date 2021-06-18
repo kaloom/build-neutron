@@ -1,4 +1,4 @@
-FROM centos:7.6.1810
+FROM centos:8.3.2011
 
 COPY test-requirements.txt requirements.txt /tmp/
 WORKDIR /tmp
@@ -7,7 +7,6 @@ WORKDIR /tmp
 # install basic packages
 #-----------------------
 RUN yum -y install \
-    fakeroot \ 
     rpm-build \
     python3-devel \
     python3-setuptools \
