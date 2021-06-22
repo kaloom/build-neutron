@@ -17,7 +17,7 @@ cliff==2.16.0
 cmd2==0.8.9
 configparser==4.0.2
 contextlib2==0.6.0
-cryptography==3.2
+cryptography==3.3.2
 cursive==0.2.2
 debtcollector==1.22.0
 decorator==4.4.0
