@@ -4,7 +4,7 @@ services:
 env:
   global:
     - IMAGE_NAME=build-neutron
-    - VERSION=2.0.0
+    - VERSION=3.0.0
     # The following variables are set as travis secret properties
     # REGISTRY_USER=<user name of docker registry>
     # REGISTRY_PASS=<password of docker registry>
