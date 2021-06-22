@@ -24,7 +24,7 @@ decorator==4.4.0
 dogpile.cache==0.8.0
 enum-compat==0.0.2
 enum34==1.1.6
-eventlet==0.20.0
+eventlet==0.31.0
 extras==1.0.0
 fasteners==0.15
 fixtures==3.0.0
